@@ -1,0 +1,36 @@
+<ion-view title="Caveau">
+    <ion-content class="stable-background">
+        <ion-list class="list" ng-if="unlocked && !first_login" can-swipe="true">
+            <ion-item class="item" ng-click="share(item,$index)" ng-repeat="item in caveau track by item.IBAN">
+                <h2>{{item.name}} <span ng-if="item.holder">({{item.holder}})</span></h2>
+
+                <p>{{item.IBAN}} <span ng-if="item.bic">(BIC: {{item.bic}})</span></p>
+                <ion-option-button class="button-assertive"
+                                   ng-click="delete(item)" style="padding-top:15px">
+                    <span class="icon ion-ios-trash-outline" style="font-size:28px;"></span>Delete
+                </ion-option-button>
+                <!--
+                <ion-option-button class="button-info"
+                                   ng-click="share(item)" style="padding-top:15px">
+                    <span class="icon ion-ios-paperplane-outline" style="font-size:28px;"></span>Share
+                </ion-option-button>
+                -->
+            </ion-item>
+        </ion-list>
+        <!--
+        <div class="padding" style="margin-top:20px" ng-if="unlocked && !first_login">
+            <small style="color:#aaa; text-align:justify; text-justify: inter-word">Swipe items to the left to
+                share/delete
+            </small>
+        </div>
+        -->
+        <div ng-show="unlocked && !first_login && (!caveau || caveau.length==0)">
+            <div class="card" style="margin:5px;">
+                <div class="item">
+                    <h2>Your caveau is empty!</h2>
+                    <p>Add an IBAN to your caveau to get started</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

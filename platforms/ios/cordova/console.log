@@ -1,0 +1,12 @@
+2014-12-13 02:19:42.136 caveau[33296:1718957] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/luca/Library/Developer/CoreSimulator/Devices/F14EAA3A-F5C2-41A9-92B5-9AA3E256F8FB/data/Containers/Data/Application/46486615-696D-4FB1-AAC3-E28B801B37AA/Library/Cookies/Cookies.binarycookies
+2014-12-13 02:19:42.448 caveau[33296:1718957] Apache Cordova native platform version 3.7.0 is starting.
+2014-12-13 02:19:42.448 caveau[33296:1718957] Multi-tasking -> Device: YES, App: YES
+2014-12-13 02:19:42.462 caveau[33296:1718957] Unlimited access to network resources
+2014-12-13 02:19:43.679 caveau[33296:1718957] Resetting plugins due to page load.
+2014-12-13 02:19:43.932 caveau[33296:1718957] Finished load of: file:///Users/luca/Library/Developer/CoreSimulator/Devices/F14EAA3A-F5C2-41A9-92B5-9AA3E256F8FB/data/Containers/Bundle/Application/3DC1304A-3CE0-4ED7-BC94-DB7F72CB14B0/caveau.app/www/index.html#/tab/dash
+2014-12-13 02:24:50.962 caveau[34076:1726019] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/luca/Library/Developer/CoreSimulator/Devices/F14EAA3A-F5C2-41A9-92B5-9AA3E256F8FB/data/Containers/Data/Application/D8CF2A85-0F8D-4F85-8CA0-F907E7BE4B57/Library/Cookies/Cookies.binarycookies
+2014-12-13 02:24:51.057 caveau[34076:1726019] Apache Cordova native platform version 3.7.0 is starting.
+2014-12-13 02:24:51.057 caveau[34076:1726019] Multi-tasking -> Device: YES, App: YES
+2014-12-13 02:24:51.059 caveau[34076:1726019] Unlimited access to network resources
+2014-12-13 02:24:51.296 caveau[34076:1726019] Resetting plugins due to page load.
+2014-12-13 02:24:51.424 caveau[34076:1726019] Finished load of: file:///Users/luca/Library/Developer/CoreSimulator/Devices/F14EAA3A-F5C2-41A9-92B5-9AA3E256F8FB/data/Containers/Bundle/Application/B1E030DB-4B6E-4024-A365-20E5483C5865/caveau.app/www/index.html#/tab/dash

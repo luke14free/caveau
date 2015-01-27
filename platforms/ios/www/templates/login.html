@@ -1,0 +1,33 @@
+<ion-modal-view class="graybg max520">
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Welcome back to Caveau!</h1>
+    </ion-header-bar>
+    <ion-content>
+        <ion-slide-box>
+            <ion-slide class="graybg" style="width:100%">
+                <div class="onesto">
+                    <img class="onesto" src="img/onesto1.png">
+                </div>
+            </ion-slide>
+            <ion-slide class="min520" style="background-color: white">
+                <div>
+                    <label class="item item-input item-stacked-label">
+                    <span class="input-label">
+                        <span ng-class="{'assertive':!checkPassword(data.password) && data.password.length > 0}">
+                            Password <span ng-if="!checkPassword(data.password) && data.password.length > 0">(not quite right)</span>
+                        </span>
+                    </span>
+                        <input type="password" ng-model="data.password"
+                               placeholder="Type your password here">
+                    </label>
+                </div>
+                <div class="padding"
+                     ng-show="checkPassword(data.password)">
+                    <button class="button button-block button-assertive" style="margin-bottom:20px;"
+                            ng-click="logIn(data.password);">
+                        Enter the caveau
+                    </button>
+                </div>
+            </ion-slide>
+    </ion-content>
+</ion-modal-view>

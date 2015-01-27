@@ -1,0 +1,104 @@
+/* Empty. Add your own CSS if you like */
+.error{
+    border:1px solid red;
+}
+
+.onesto{
+    max-width:275px;
+    max-height:510px;
+    padding-bottom: 20px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.graybg{
+    background-color: #e7e7e7;
+}
+
+.max520{
+    max-height:600px;
+}
+
+.min520{
+    min-height:520px;
+}
+
+.pin > .item{
+    background-color: #34495E;
+    color: white;
+}
+
+.item > .card-container > h2{
+    color:#ECF0F1;
+}
+
+.item > .card-container > p{
+    color: #BDC3C7;
+}
+
+.card-container{
+    float:left;
+}
+
+.creditcard > .item{
+    background-color: #34495E;
+    color: white;
+}
+
+.creditcard > .item > .app-icon{
+    float: left;
+    font-size: 40px;
+    margin-right: 15px;
+    color: #F1C40F;
+    min-width:40px;
+}
+
+.password > .item{
+    background-color: #34495E;
+    color: white;
+}
+
+.password > .item > .app-icon{
+    float: left;
+    font-size: 40px;
+    margin-right: 15px;
+    color: #1ABC9C;
+    min-width:40px;
+}
+
+.iban > .item{
+    background-color: #34495E;
+    color: white;
+}
+
+.iban > .item > .app-icon{
+    float: left;
+    font-size: 40px;
+    margin-right: 15px;
+    color: #E74C3C;
+    min-width:40px;
+}
+
+
+.pin > .item > .app-icon{
+
+    float: left;
+    font-size: 40px;
+    margin-right: 15px;
+    color: #3498DB;
+    min-width:40px;
+
+}
+
+.list > .card{
+    margin-top:8px;
+    margin-bottom:0px;
+}
+/*
+.has-tabs, .bar-footer.has-tabs{
+    bottom:0px;
+}
+
+.tab-nav{
+    display:none;
+}*/

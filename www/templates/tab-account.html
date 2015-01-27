@@ -1,0 +1,17 @@
+<ion-view title="Caveau">
+    <ion-content>
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Account name</span>
+                <input type="text" ng-model="data.name" placeholder="e.g. personal account">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">IBAN</span>
+                <input type="text" ng-model="data.iban" placeholder="e.g. IT60X0542811101000000123456">
+            </label>
+            <button ng-click="addIBAN()" class="button button-block button-positive">
+                Create Account
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

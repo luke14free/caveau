@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:6
+-keep class com.ionicframework.ibanapp364454.CordovaApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:12
+-keep class com.jcjee.plugins.EmailAttachmentProvider { <init>(...); }
+

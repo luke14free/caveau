@@ -1,0 +1,92 @@
+<ion-view title="Caveau">
+    <ion-header-bar align-title="center" class="bar-assertive">
+        <h1 class="title">caveau</h1>
+    </ion-header-bar>
+    <div id="add" style="
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: #E74C3C;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999999;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);">
+        <div class="icon ion-ios7-plus-empty" style="
+            color: white;
+            font-size: 40px;
+            margin-left: 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        " ui-sref="tab.friends"></div>
+    </div>
+    <ion-content class="stable-background">
+
+        <ion-list class="list" ng-if="unlocked && !first_login" can-swipe="true">
+            <div class="card iban" ng-click="share(item,$index)"
+                 ng-repeat="item in ibans track by item.IBAN">
+                <h2>{{item.name}} <span ng-if="item.holder">({{item.holder}})</span></h2>
+
+                <p>{{item.IBAN}} <span ng-if="item.bic">(BIC: {{item.bic}})</span></p>
+                <ion-option-button class="button-assertive"
+                                   ng-click="delete(item)" style="padding-top:15px">
+                    <span class="icon ion-ios-trash-outline" style="font-size:28px;"></span>Delete
+                </ion-option-button>
+            </div>
+            <div class="card pin" ng-repeat="item in pins track by item.pin">
+
+
+                <div class="item">
+                    <span class="app-icon icon ion-ios7-locked"></span>
+
+                    <div class="card-container">
+                        <h2>{{item.name}}</h2>
+
+                        <p>{{item.pin}}</p>
+                    </div>
+                </div>
+                <!--
+                <ion-option-button class="button-assertive"
+                                   ng-click="delete(item)" style="padding-top:15px">
+                    <span class="icon ion-ios-trash-outline" style="font-size:28px;"></span>Delete
+                </ion-option-button>
+                -->
+            </div>
+            <div class="card creditcard" ng-click="share(item,$index)"
+                 ng-repeat="item in creditcards track by item.card_number">
+
+
+                <div class="item">
+                    <span class="app-icon icon ion-card"></span>
+
+                    <div class="card-container">
+                        <h2>{{item.card_holder}}</h2>
+
+                        <p>{{item.card_number}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card password" ng-click="share(item,$index)"
+                 ng-repeat="item in passwords track by item.account">
+
+                <div class="item">
+                    <span class="app-icon icon ion-ios7-person"></span>
+                    <div class="card-container">
+                        <h2>{{item.username}}</h2>
+
+                        <p>{{item.password}}</p>
+                    </div>
+                </div>
+            </div>
+        </ion-list>
+        <div ng-show="unlocked && !first_login && (!caveau || caveau.length==0)">
+            <div class="card" style="margin:5px;">
+                <div class="item">
+                    <h2>Your caveau is empty!</h2>
+
+                    <p>Add an item to your caveau to get started</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

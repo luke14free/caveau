@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+.error{
+    border:1px solid red;
+}
+
+.onesto{
+    max-width:275px;
+    max-height:490px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.graybg{
+    background-color: #e7e7e7;
+}
+
+.max520{
+    max-height:600px;
+}
+
+.min520{
+    min-height:520px;
+}

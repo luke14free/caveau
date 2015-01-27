@@ -1,0 +1,57 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-positive">
+        <h1 class="title">Welcome to Caveau!</h1>
+    </ion-header-bar>
+    <!--
+    <div class="bar bar-subheader bar-positive">
+        <p class="title"></p>
+    </div>
+    -->
+    <ion-content class="list has-subheader">
+        <ion-slide-box>
+            <ion-slide class="graybg">
+                <img class="onesto" src="img/onesto.png">
+            </ion-slide>
+            <ion-slide class="graybg">
+                <img class="onesto" src="img/onesto2.png">
+            </ion-slide>
+            <ion-slide class="graybg">
+                <img class="onesto" src="img/onesto3.png">
+            </ion-slide>
+            <ion-slide class="graybg">
+                <img class="onesto" src="img/onesto4.png">
+            </ion-slide>
+            <ion-slide>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">
+                        <span ng-class="{'assertive': !isValidPassword(data.password) && !data.password.length==0}">Passowrd <span
+                                ng-show="!isValidPassword(data.password) && !data.password.length==0">(too weak)</span></span>
+                    </span>
+                    <input type="password" ng-model="data.password"
+                           placeholder="8+ chars, 1+ uppercase, 1+ special char">
+                </label>
+                <label class="item item-input item-stacked-label">
+            <span class="input-label"
+                  ng-class="{'assertive': data.repeat_password != data.password}">Repeat password <span
+                    ng-show="data.repeat_password != data.password">(doesn't match)</span></span>
+                    <input type="password" ng-model="data.repeat_password" placeholder="Retype your password here">
+                </label>
+
+                <div class="padding" style="margin-bottom:0px;"
+                     ng-show="(isValidPassword(data.password) && data.repeat_password == data.password)">
+                    <button class="button button-block button-assertive" style="margin-bottom:0px;"
+                            ng-click="setUpAccount()">
+                        Save password
+                    </button>
+                </div>
+                <div class="padding" style="margin-top:20px">
+                    <small style="color:#aaa; text-align:justify; text-justify: inter-word">
+                        Disclaimer: to guarantee you the highest level of security, all your data, including your
+                        password will be encrypted on your phone local storage.
+                        You wont be able to recover it!
+                    </small>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+</ion-modal-view>
